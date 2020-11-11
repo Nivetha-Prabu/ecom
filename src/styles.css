@@ -1,0 +1,28 @@
+/* You can add global styles to this file, and also import other style files */
+.container-fluid {
+    height:100%;
+    width:100%;
+    padding: 0% !important;
+    margin: 0% !important;
+}
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+/* @import "~@angular/material/prebuilt-themes/deeppurple-amber.css"; */
+ @import "~@angular/material/prebuilt-themes/indigo-pink.css"; 
+/* @import "~@angular/material/prebuilt-themes/pink-bluegrey.css"; */
+/* @import "~@angular/material/prebuilt-themes/purple-green.css"; */
+
+.mat-card-header .mat-card-title {
+    text-align: center;
+}
+.mat-card-actions .mat-button:first-child {
+    margin-left: 0px !important;
+    margin-right: 68px !important;
+}
+.mat-card>.mat-card-actions:last-child {
+    margin-bottom: 0px;
+    padding-bottom: 0;
+}

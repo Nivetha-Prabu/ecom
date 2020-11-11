@@ -1,0 +1,48 @@
+<!-- <p>login works!</p>
+<div class="container">
+    <div class="row">
+        <div class="col-md-6 col-md-offset-3">
+    <h1 *ngIf="authenticationService && authenticationService.userData | async">Hello {{ (authenticationService.userData | async)?.email }}</h1>
+    <div *ngIf="!(authenticationService.userData | async)">
+    <div class="form-group">
+      <label for="email">Email address:</label>
+      <input type="text" class="form-control" [(ngModel)]="email" placeholder="email">
+    </div>
+    <div class="form-group">
+      <label for="pwd">Password:</label>
+      <input type="password" class="form-control" [(ngModel)]="password" id="pwd" placeholder="password">
+    </div>
+    <button (click)="signUp()" class="btn btn-default">Sign Up</button>
+    <button (click)="signIn()" class="btn btn-default" style="margin-left:5px;">Login</button>
+  
+</div>
+<button (click)="signOut()" class="btn btn-primary" *ngIf="authenticationService.userData | async">Logout</button>
+</div>
+</div> -->
+<div class="myContainer">
+<div class="wrapper">
+    <div id="formContent">
+      <div id="title">
+        <h2><span class="active">SIGN IN</span></h2>
+      </div>
+  
+      <div id="image" >
+        <img src="assets/images/i.png" id="icon"  alt="User Icon" />
+      </div>
+  
+      <form >
+          <div class="form-group">
+        <input   type="text" id="login"  name="email" [(ngModel)]="email"
+        placeholder="login" >  
+        </div>
+            <div class="form-group">
+        <input  [(ngModel)]="password"
+        type="text" id="password"  name="password" placeholder="password">
+                    </div>
+         <div class="form-group">
+            <button (click)="signIn()" class="btn btn-primary" >Login</button>
+    </div>
+      </form>
+    </div>
+  </div>
+</div>  

@@ -1,0 +1,22 @@
+<!--The content below is only a placeholder and can be replaced.-->
+<div class="container">
+       <div class="row" style="margin-top: 25px;">
+      <div class="col-md-3">
+        <input type="text" class="form-control" [(ngModel)]="productName" placeholder="Name">
+      </div>
+      <div class="col-md-3">
+        <input type="text" class="form-control" [(ngModel)]="Price" placeholder="Price">
+      </div>
+      <div class="col-md-3">
+        <input type="text" class="form-control" [(ngModel)]="quantity" placeholder="quantity">
+      </div>
+      <div class="col-md-3">
+        <input type="text" class="form-control" [(ngModel)]="description" placeholder="description">
+      </div>
+      <div class="col-md-3">
+        <button type="button" (click)="addProduct()" class="btn btn-primary">
+          Add Product</button>
+      </div>
+    </div>
+  </div>
+  
